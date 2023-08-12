@@ -664,7 +664,7 @@ namespace BattleBitAPI.Server
         }
         public void SetThrowable(Player<TPlayer> player, string tool, int extra, bool clear = false)
         {
-            SetThrowable(player.SteamID, tool, extra,clear);
+            SetThrowable(player.SteamID, tool, extra, clear);
         }
 
         // ---- Closing ----

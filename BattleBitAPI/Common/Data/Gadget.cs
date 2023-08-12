@@ -27,7 +27,7 @@
 
         public static bool operator ==(string left, Gadget right)
         {
-            bool leftNull = object.ReferenceEquals(left,null);
+            bool leftNull = object.ReferenceEquals(left, null);
             bool rightNull = object.ReferenceEquals(right, null);
             if (leftNull && rightNull)
                 return true;

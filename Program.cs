@@ -89,7 +89,7 @@ class MyGameServer : GameServer<MyPlayer>
     }
     public override async Task OnPlayerSpawned(MyPlayer player)
     {
-        if(player.IsZombie)
+        if (player.IsZombie)
         {
             player.SetRunningSpeedMultiplier(2f);
             player.SetJumpMultiplier(2f);

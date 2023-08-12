@@ -519,7 +519,7 @@ namespace BattleBitAPI.Common.Serialization
             fixed (byte* ptr = &Buffer[ReadPosition])
                 str = System.Text.Encoding.UTF8.GetString(ptr, size);
 #else
-        str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
+            str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
 #endif
             ReadPosition += size;
 
@@ -549,7 +549,7 @@ namespace BattleBitAPI.Common.Serialization
             fixed (byte* ptr = &Buffer[ReadPosition])
                 str = System.Text.Encoding.UTF8.GetString(ptr, size);
 #else
-        str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
+            str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
 #endif
 
             ReadPosition += size;
@@ -586,7 +586,7 @@ namespace BattleBitAPI.Common.Serialization
             fixed (byte* ptr = &Buffer[ReadPosition])
                 str = System.Text.Encoding.UTF8.GetString(ptr, size);
 #else
-        str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
+            str = System.Text.Encoding.UTF8.GetString(Buffer, ReadPosition, size);
 #endif
 
             ReadPosition += size;

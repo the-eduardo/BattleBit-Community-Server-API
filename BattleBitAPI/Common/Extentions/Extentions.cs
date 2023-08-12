@@ -21,7 +21,7 @@ namespace BattleBitAPI.Common.Extentions
 #if NETCOREAPP
             return BitConverter.ToUInt32(address.GetAddressBytes());
 #else
-        return BitConverter.ToUInt32(address.GetAddressBytes(), 0);
+            return BitConverter.ToUInt32(address.GetAddressBytes(), 0);
 #endif
         }
 
